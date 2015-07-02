@@ -1,0 +1,24 @@
+{
+  "name": "MR_port",
+  "version": "1.0.0",
+  "description": "portfolio site",
+  "main": "index.js",
+  "dependencies": {
+    "gulp-compass": "^2.1.0",
+    "gulp": "^3.8.11",
+    "gulp-concat": "^2.5.2",
+    "gulp-connect": "^2.2.0",
+    "gulp-sass": "^2.0.1",
+    "gulp-util": "^3.0.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "?.git"
+  },
+  "author": "matt ray",
+  "license": "ISC"
+}
