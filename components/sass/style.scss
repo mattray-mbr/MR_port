@@ -8,8 +8,47 @@
 
 
 body {
-    background-color: green;
+    background-color: $green;
+background-image: url(http://www.transparenttextures.com/patterns/clean-gray-paper.png);
 }
-p {
-    color: red;
+h1, h2, h3 {
+    font-family: $headfont;
+    color: $beige;
+}
+h4, h5, h6, p, li, a {
+    font-family: $bodyfont;
+}
+h2 {
+    font-size: 3em;
+}
+.top {
+    background-color: $DarkGreen;
+background-image: url(http://www.transparenttextures.com/patterns/clean-gray-paper.png);
+border-bottom: 2px solid black;
+}
+.title {
+    font-size: 6em;
+    text-shadow: 2px 2px black;
+}
+.navbar {
+    background-color: transparent;
+    border: none;
+}
+.nav {
+    li {
+        font-size: 2em;
+        text-shadow: 1px 1px black;
+        text-align: center;
+        font-weight: bold;
+        a {
+            color: $beige;
+        }
+        a:hover {
+            background-color: $blue;
+        }
+    }
+}
+.i-mages {
+    max-width: 1500px;
+    max-height: 1000px;
 }

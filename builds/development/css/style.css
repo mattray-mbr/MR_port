@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Amarante|Roboto+Slab);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -55,9 +56,53 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 body {
-  background-color: green;
+  background-color: #008f39;
+  background-image: url(http://www.transparenttextures.com/patterns/clean-gray-paper.png);
 }
 
-p {
-  color: red;
+h1, h2, h3 {
+  font-family: font-family "Amarante", serif;
+  color: #ffffcc;
+}
+
+h4, h5, h6, p, li, a {
+  font-family: font-family "Roboto Slab", serif;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+.top {
+  background-color: #006600;
+  background-image: url(http://www.transparenttextures.com/patterns/clean-gray-paper.png);
+  border-bottom: 2px solid black;
+}
+
+.title {
+  font-size: 6em;
+  text-shadow: 2px 2px black;
+}
+
+.navbar {
+  background-color: transparent;
+  border: none;
+}
+
+.nav li {
+  font-size: 2em;
+  text-shadow: 1px 1px black;
+  text-align: center;
+  font-weight: bold;
+}
+.nav li a {
+  color: #ffffcc;
+}
+.nav li a:hover {
+  background-color: #0066CC;
+}
+
+.i-mages {
+  max-width: 1500px;
+  max-height: 1000px;
 }
