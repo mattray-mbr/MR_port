@@ -11,31 +11,38 @@
 <body>
     <header class="top">
         <h1 class="title">Matt Ray</h1>
-        <div class="navbar navbar-default" id="heading">
+        <nav class="navbar navbar-default navbar-fixed-top" id="heading">
             <ul class="nav nav-pills">
                 <li><a href="">About Me</a></li>
-                <li><a href="">Projects</a></li>
+                <li id="second"><a href="">Projects</a></li>
                 <li><a href="">Other</a></li>
                 <li><a href="">Contact</a></li>
             </ul>
-        </div>
+        </nav>
     </header>
-    <div class="container-fluid">
-        <section>
-            <h2>Recent work</h2>
-                <div class="content">
-                    <h3>Rayce Gravity</h3>
-                    <img class="i-mages" src="images/landscape.png" alt="landscape">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime pariatur sunt provident libero, quo maiores voluptatibus officiis optio, fugit perferendis iure cumque aliquid harum dolor corporis, quisquam temporibus tenetur distinctio!</p>
-                </div>
-        </section>
-
-
-
-
-
-
+    <div class="container">
+            <div class="img-container col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1" id="landscape">
+                <div class="semi-circle" id="top-left"></div>
+                <div class="semi-circle" id="top-right"></div>
+                <img class="i-mages img-responsive" src="images/landscape1.png" alt="landscape">
+                <div class="semi-circle" id="bottom-left"></div>
+                <div class="semi-circle" id="bottom-right"></div>
+            </div>
     </div>
+    <div class="container" id="container-bottom">
+        <div class="content">
+            <h2 id="contentHeading">Recent work</h2>
+            <div class="col-lg-8 col-lg-offset-2">
+                <img class="img-responsive" src="images/RayceGravity1.png" alt="rayce gravity">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime pariatur sunt provident libero, quo maiores voluptatibus officiis optio, fugit perferendis iure cumque aliquid harum dolor corporis, quisquam temporibus tenetur distinctio!</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <span>created by</span>
+        <span>terms of service</span>
+        <span>questions comments</span>
+    </footer>
     <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>

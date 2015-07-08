@@ -21,6 +21,12 @@ h4, h5, h6, p, li, a {
 h2 {
     font-size: 3em;
 }
+p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    color: black;
+    margin: 20px;
+}
 .top {
     background-color: $DarkGreen;
 background-image: url(http://www.transparenttextures.com/patterns/clean-gray-paper.png);
@@ -29,9 +35,12 @@ border-bottom: 2px solid black;
 .title {
     font-size: 6em;
     text-shadow: 2px 2px black;
+    text-align: center;
+    padding: 50px 0 20px 0;
 }
 .navbar {
-    background-color: transparent;
+    background-color: $DarkGreen;
+    background-image: url(http://www.transparenttextures.com/patterns/clean-gray-paper.png);
     border: none;
 }
 .nav {
@@ -39,16 +48,79 @@ border-bottom: 2px solid black;
         font-size: 2em;
         text-shadow: 1px 1px black;
         text-align: center;
+        width: 17.8%;
         font-weight: bold;
         a {
             color: $beige;
         }
         a:hover {
-            background-color: $blue;
+            background-color: $beige;
+            color: $green;
+            text-shadow: none;
         }
     }
 }
-.i-mages {
-    max-width: 1500px;
-    max-height: 1000px;
+#second {
+    margin-right: 28%;
+}
+.container {
+    width: 100%;
+    padding: 100px 20px 20px 20px;
+    background-color: $green;
+    background-image: url(http://www.transparenttextures.com/patterns/clean-gray-paper.png);
+}
+#container-bottom {
+    background-color: $beige;
+    background-image: url(http://www.transparenttextures.com/patterns/clean-gray-paper.png);
+}
+#contentHeading {
+    text-align: center;
+    color: black;
+    margin: 0 0 20px 0;
+}
+#landscape {
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: $green;
+    background-image: url(http://www.transparenttextures.com/patterns/clean-gray-paper.png);
+    img {
+        border: 8px solid black;
+    }
+}
+.semi-circle {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    position: relative;
+    z-index: 1;
+}
+#top-left {
+    float: left;
+    top: 20px;
+    border-bottom-right-radius: 15px;
+}
+#top-right {
+    float: right;
+    top: 20px;
+    border-bottom-left-radius: 15px;
+}
+#bottom-left {
+    float: left;
+    top: -20px;
+    border-top-right-radius: 15px;
+}
+#bottom-right {
+    float: right;
+    top: -20px;
+    border-top-left-radius: 15px;
+}
+footer {
+    height: 30px;
+    width: 100%;
+    background-color: #999;
+    margin: 0;
+    span {
+        color: #333;
+        font-size:  .8em;
+    }
 }
