@@ -31,16 +31,23 @@ p {
     background-color: $DarkGreen;
 background-image: url(http://www.transparenttextures.com/patterns/clean-gray-paper.png);
 border-bottom: 2px solid black;
+position: fixed;
+z-index: 2;
+width: 100%;
+height: 100px;
 }
 .title {
-    font-size: 6em;
+    font-size: 5em;
     text-shadow: 2px 2px black;
     text-align: center;
     padding: 50px 0 20px 0;
+    color: $blue;
+    position:relative;
+    top: -50px;
 }
 .navbar {
-    background-color: $DarkGreen;
-    background-image: url(http://www.transparenttextures.com/patterns/clean-gray-paper.png);
+    background-color: transparent;
+    //background-image: url(http://www.transparenttextures.com/patterns/clean-gray-paper.png);
     border: none;
 }
 .nav {
@@ -48,7 +55,7 @@ border-bottom: 2px solid black;
         font-size: 2em;
         text-shadow: 1px 1px black;
         text-align: center;
-        width: 17.8%;
+        width: 17.81%;
         font-weight: bold;
         a {
             color: $beige;
@@ -61,15 +68,22 @@ border-bottom: 2px solid black;
     }
 }
 #second {
-    margin-right: 28%;
+    margin-right: 28.2%;
+}
+.tagline {
+    text-align: center;
+    margin: 15px 0 5px 0;
+    text-shadow: 2px 2px black;
 }
 .container {
     width: 100%;
-    padding: 100px 20px 20px 20px;
+    padding: 100px 20px 10px 20px;
     background-color: $green;
     background-image: url(http://www.transparenttextures.com/patterns/clean-gray-paper.png);
 }
 #container-bottom {
+    border-top: 2px solid black;
+    padding-top: 30px;
     background-color: $beige;
     background-image: url(http://www.transparenttextures.com/patterns/clean-gray-paper.png);
 }
@@ -77,6 +91,7 @@ border-bottom: 2px solid black;
     text-align: center;
     color: black;
     margin: 0 0 20px 0;
+    font-size: 3.8em;
 }
 #landscape {
     padding-right: 10px;
@@ -84,13 +99,13 @@ border-bottom: 2px solid black;
     background-color: $green;
     background-image: url(http://www.transparenttextures.com/patterns/clean-gray-paper.png);
     img {
-        border: 8px solid black;
+        border: 6px solid $beige;
     }
 }
 .semi-circle {
     width: 20px;
     height: 20px;
-    background-color: black;
+    background-color: $beige;
     position: relative;
     z-index: 1;
 }
@@ -114,13 +129,18 @@ border-bottom: 2px solid black;
     top: -20px;
     border-top-left-radius: 15px;
 }
+#current-img {
+    border: 2px solid black;
+}
 footer {
-    height: 30px;
+    height: 25px;
     width: 100%;
-    background-color: #999;
+    padding: 3px;
+    background-color: #756545;
     margin: 0;
+    border-top: 2px solid black;
     span {
         color: #333;
-        font-size:  .8em;
+       // font-size:  .8em;
     }
 }
