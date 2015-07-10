@@ -80,6 +80,15 @@ p {
   margin: 20px;
 }
 
+a {
+  color: #33ADFF;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
 .top {
   background-color: #005200;
   background-image: url(http://www.transparenttextures.com/patterns/clean-gray-paper.png);
@@ -98,6 +107,7 @@ p {
   color: #33ADFF;
   position: relative;
   top: -50px;
+  z-index: 2;
 }
 
 .navbar {
