@@ -8,7 +8,7 @@
 
 
 body {
-    background-color: $green;
+    background-color: $beige;
 background-image: url(http://www.transparenttextures.com/patterns/clean-gray-paper.png);
 }
 h1, h2, h3 {
@@ -19,10 +19,13 @@ h4, h5, h6, p, li, a {
     font-family: $bodyfont;
 }
 h2 {
-    font-size: 3em;
+    font-size: 2.5em;
+    @media(max-width: 720px ) {
+        font-size: 2em;
+    }
 }
 p {
-    font-size: 1.2em;
+    font-size: 1em;
     line-height: 1.5;
     color: black;
     margin: 20px;
@@ -38,20 +41,21 @@ a:hover {
     background-color: $DarkGreen;
 background-image: url(http://www.transparenttextures.com/patterns/clean-gray-paper.png);
 border-bottom: 2px solid black;
-position: fixed;
-z-index: 2;
+//position: fixed;
+//z-index: 2;
 width: 100%;
 height: 100px;
 }
 .title {
-    font-size: 5em;
+    font-size: 4.5em;
     text-shadow: 2px 2px black;
     text-align: center;
-    padding: 50px 0 20px 0;
+    //padding: 50px 0 20px 0;
     color: $blue;
     position:relative;
-    top: -50px;
-    z-index: 2;
+    top: -60px;
+    //left: 40%;
+    //width:320px;
 }
 .navbar {
     background-color: transparent;
@@ -60,7 +64,7 @@ height: 100px;
 }
 .nav {
     li {
-        font-size: 2em;
+        font-size: 1.7em;
         text-shadow: 1px 1px black;
         text-align: center;
         width: 17.81%;
@@ -85,21 +89,28 @@ height: 100px;
 }
 .container {
     width: 100%;
-    padding: 100px 20px 10px 20px;
+    padding: 10px 20px 10px 20px;
     background-color: $green;
     background-image: url(http://www.transparenttextures.com/patterns/clean-gray-paper.png);
+    border-bottom: 2px solid black;
 }
 #container-bottom {
-    border-top: 2px solid black;
-    padding-top: 30px;
+    padding: 30px 15px;
+    min-height: 800px;
     background-color: $beige;
     background-image: url(http://www.transparenttextures.com/patterns/clean-gray-paper.png);
+    h3 {
+        text-align: center;
+        color: black;
+        font-size: 2em;
+        margin:10px;
+    }
 }
 #contentHeading {
     text-align: center;
     color: black;
     margin: 0 0 20px 0;
-    font-size: 3.8em;
+    font-size: 3em;
 }
 #landscape {
     padding-right: 10px;
@@ -120,33 +131,62 @@ height: 100px;
 #top-left {
     float: left;
     top: 20px;
-    border-bottom-right-radius: 15px;
+    border-bottom-right-radius: 20px;
 }
 #top-right {
     float: right;
     top: 20px;
-    border-bottom-left-radius: 15px;
+    border-bottom-left-radius: 20px;
 }
 #bottom-left {
     float: left;
     top: -20px;
-    border-top-right-radius: 15px;
+    border-top-right-radius: 20px;
 }
 #bottom-right {
     float: right;
     top: -20px;
-    border-top-left-radius: 15px;
+    border-top-left-radius: 20px;
+}
+.alt-page {
+    background-color: $green;
+    background-image: url(http://www.transparenttextures.com/patterns/clean-gray-paper.png);
 }
 #current-img {
     border: 2px solid black;
+}
+.page-head {
+    height: 100px;
+    background-color: $beige;
+    padding-top: 25px;
+    margin-top: 20px;
+}
+.page-title {
+    color: black;
+    text-align: center;
+}
+.words {
+    margin: 10px 10px;
+}
+.work-imgs {
+    //max-height: 500px;
+    overflow: hidden;
+    margin: 10px 0;
+   // img {
+        //height: 420px;
+       // display: inline-block;
+   // }
+}
+.future-update {
+    color: $blue;
 }
 footer {
     height: 25px;
     width: 100%;
     padding: 3px;
-    background-color: #756545;
+    background-color: $DarkGreen;
+    background-image: url(http://www.transparenttextures.com/patterns/clean-gray-paper.png);
     margin: 0;
-    border-top: 2px solid black;
     span {
         color: #333;
        // font-size:  .8em;
