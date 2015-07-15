@@ -102,15 +102,6 @@ a:hover {
   height: 100px;
 }
 
-.title {
-  font-size: 4.5em;
-  text-shadow: 2px 2px black;
-  text-align: center;
-  color: #33ADFF;
-  position: relative;
-  top: -60px;
-}
-
 .navbar {
   background-color: transparent;
   border: none;
@@ -120,7 +111,7 @@ a:hover {
   font-size: 1.7em;
   text-shadow: 1px 1px black;
   text-align: center;
-  width: 17.81%;
+  width: 16.5%;
   font-weight: bold;
 }
 .nav li a {
@@ -134,6 +125,23 @@ a:hover {
 
 #second {
   margin-right: 28.2%;
+}
+
+#mattray {
+  width: 33%;
+}
+#mattray .title {
+  padding-top: 5px;
+  font-size: 2.6em;
+  text-shadow: 2px 2px black;
+}
+#mattray .title a {
+  color: #33ADFF;
+}
+#mattray .title a:hover {
+  background-color: transparent;
+  color: #33ADFF;
+  text-shadow: 2px 2px black;
 }
 
 .tagline {
@@ -244,6 +252,21 @@ a:hover {
 
 .future-update {
   color: #33ADFF;
+}
+
+.temporary {
+  font-family: font-family "Roboto Slab", serif;
+}
+
+#computer {
+  float: left;
+}
+
+.about-imgs {
+  width: 300px;
+  margin: 10px;
+  float: right;
+  border: 1px solid black;
 }
 
 footer {
