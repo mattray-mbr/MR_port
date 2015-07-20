@@ -9,14 +9,25 @@
 </head>
 <body>
     <header class="top">
-        <nav class="navbar navbar-default navbar-static-top" id="heading">
-            <ul class="nav nav-pills">
-                <li><a href="about.html">About Me</a></li>
-                <li ><a href="projects.html">Projects</a></li>
-                <li id="mattray"><h1 class="title"><a href="index.html">Matt Ray</a></h1></li>
-                <li><a href="resources.html">Resources</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+        <nav class="navbar navbar-default navbar-static-top" id="heading" rol="navigation">
+        <div class="navbar-header">
+                <h2 class="visible-xs nav-menu-small">Matt Ray</h2>
+                <button type="button" class="navbar-toggle menuButton" data-toggle="collapse" data-target="#collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse hidden-xs" id="collapse">
+                <ul class="nav nav-pills">
+                    <li><a href="about.html">About Me</a></li>
+                    <li ><a href="projects.html">Projects</a></li>
+                    <li id="mattray"><h1 class="title"><a href="index.html">Matt Ray</a></h1></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <div class="container">
@@ -52,9 +63,8 @@
     </div>
     </div> <!-- row -->
     <footer>
-        <span>created by</span>
-        <span>terms of service</span>
-        <span>questions comments</span>
+        <span class="footerleft">created by Matthew Ray</span>
+        <span class="footerright">last updated July 2015</span>
     </footer>
     <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>

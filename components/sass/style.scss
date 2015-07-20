@@ -9,7 +9,7 @@
 
 body {
     background-color: $beige;
-background-image: url(http://www.transparenttextures.com/patterns/clean-gray-paper.png);
+background-image: $backimg;
 }
 h1, h2, h3 {
     font-family: $headfont;
@@ -20,7 +20,7 @@ h4, h5, h6, p, li, a {
 }
 h2 {
     font-size: 2.5em;
-    @media(max-width: 720px ) {
+    @media(max-width: 720px) {
         font-size: 2em;
     }
 }
@@ -39,7 +39,7 @@ a:hover {
 }
 .top {
     background-color: $DarkGreen;
-background-image: url(http://www.transparenttextures.com/patterns/clean-gray-paper.png);
+background-image: $backimg;
 border-bottom: 2px solid black;
 //position: fixed;
 //z-index: 2;
@@ -58,6 +58,10 @@ height: 100px;
         text-align: center;
         width:16.5%;
         font-weight: bold;
+        @media(max-width: 950px) {
+        font-size: 1.3em;  
+        width: 17.4%;  
+        }
         a {
             color: $beige;
         }
@@ -68,14 +72,49 @@ height: 100px;
         }
     }
 }
+.nav-menu-small {
+    font-size: 3.8em;
+    font-weight: bold;
+    text-shadow: 2px 2px black;
+    color: $blue;
+    font-family: $bodyfont;
+    margin-left: 20px;
+    margin-top: 15px;
+    float: left;
+}
+.mini {
+    background-color: black;
+    background-image: $backimg;
+    ul {
+        display: block;
+        li {
+            width: 100%;
+        }
+        #mattray {
+            display: none;
+        }
+    }
+}
+.menuButton {
+    background-color: black;
+    margin-top: 30px;
+    margin-left: 30px;
+    float: left;
+}
 #second {
     margin-right: 28.2%;
 }
 #mattray {
     width: 33%;
+    @media(max-width: 950px) {
+        width: 29%;
+    }
     .title {
         padding-top: 5px;
         font-size: 2.6em;
+        @media(max-width: 950px) {
+            font-size: 2.3em;
+        }
         text-shadow: 2px 2px black;
         a {
             color: $blue;
@@ -96,14 +135,14 @@ height: 100px;
     width: 100%;
     padding: 10px 20px 10px 20px;
     background-color: $green;
-    background-image: url(http://www.transparenttextures.com/patterns/clean-gray-paper.png);
+    background-image: $backimg;
     border-bottom: 2px solid black;
 }
 #container-bottom {
     padding: 30px 15px;
     min-height: 800px;
     background-color: $beige;
-    background-image: url(http://www.transparenttextures.com/patterns/clean-gray-paper.png);
+    background-image: $backimg;
     h3 {
         text-align: center;
         color: black;
@@ -115,13 +154,13 @@ height: 100px;
     text-align: center;
     color: black;
     margin: 0 0 20px 0;
-    font-size: 3em;
+    font-size: 2.5em;
 }
 #landscape {
     padding-right: 10px;
     padding-left: 10px;
     background-color: $green;
-    background-image: url(http://www.transparenttextures.com/patterns/clean-gray-paper.png);
+    background-image: $backimg;
     img {
         border: 6px solid $beige;
     }
@@ -155,7 +194,7 @@ height: 100px;
 }
 .alt-page {
     background-color: $green;
-    background-image: url(http://www.transparenttextures.com/patterns/clean-gray-paper.png);
+    background-image: $backimg;
 }
 #current-img {
     border: 2px solid black;
@@ -173,17 +212,15 @@ height: 100px;
 .words {
     margin: 10px 10px;
 }
-.work-imgs {
-    //max-height: 500px;
-    overflow: hidden;
-    margin: 10px 0;
-   // img {
-        //height: 420px;
-       // display: inline-block;
-   // }
+.github {
+    padding-bottom: 50px;
 }
 .future-update {
     color: $blue;
+}
+.blazepic {
+    width: 40%;
+    margin: 0 auto;
 }
 .temporary {
     font-family: $bodyfont;
@@ -202,10 +239,17 @@ footer {
     width: 100%;
     padding: 3px;
     background-color: $DarkGreen;
-    background-image: url(http://www.transparenttextures.com/patterns/clean-gray-paper.png);
+    background-image: $backimg;
     margin: 0;
     span {
-        color: #333;
-       // font-size:  .8em;
+        color: #999;
+        font-weight: bold;
+        margin: 0 20px;
+    }
+    .footerleft {
+        float: left;
+    }
+    .footerright {
+       float: right;
     }
 }

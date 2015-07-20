@@ -9,14 +9,25 @@
 </head>
 <body>
     <header class="top">
-        <nav class="navbar navbar-default navbar-static-top" id="heading">
-            <ul class="nav nav-pills">
-                <li><a href="about.html">About Me</a></li>
-                <li ><a href="projects.html">Projects</a></li>
-                <li id="mattray"><h1 class="title"><a href="index.html">Matt Ray</a></h1></li>
-                <li><a href="resources.html">Resources</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+        <nav class="navbar navbar-default navbar-static-top" id="heading" rol="navigation">
+        <div class="navbar-header">
+                <h2 class="visible-xs nav-menu-small">Matt Ray</h2>
+                <button type="button" class="navbar-toggle menuButton" data-toggle="collapse" data-target="#collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse hidden-xs" id="collapse">
+                <ul class="nav nav-pills">
+                    <li><a href="about.html">About Me</a></li>
+                    <li ><a href="projects.html">Projects</a></li>
+                    <li id="mattray"><h1 class="title"><a href="index.html">Matt Ray</a></h1></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <div class="container">
@@ -32,20 +43,21 @@
     </div>
     <div class="row">
         <div class="content col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1" id="container-bottom">
-           <h3> Your welcome to check out my <a href="https://github.com/stybba21">github profile </a> There's not much there now, but I will add more in the future</h3>
-           <h3>lynda.com</h3>
-           <p>amazing wealth of information on a wide variety of topics</p>
-           <h3> codecademy.com</h3>
-           <p>Very basic tutorials for a few programming languages</p>
+           <h3 class="github"> Your welcome to check out my <a href="https://github.com/stybba21" target="_blank">github profile </a> There's not much there now, but I will add more in the future</h3>
+           <h3>School</h3>
+           <p>I would love to go back to school at a trade school program for web design to progress my skills in a more professional environment.</p>
+           <h3>Lynda.com</h3>
+           <p>Amazing wealth of information on a wide variety of topics. I have used their tutorials for over a year now to help me learn new frameworks, languages, and overall just better ways of doing things.</p>
+           <h3> Codecademy.com</h3>
+           <p>A very basic, good starting introduction into many languages. I've done almost all of the tutorials on there, since they are pretty short. I used the site to get an overall gist of what different languages are capable of and the major differences between them</p>
            <h3>Javascript Essentials &amp; Javascript: The Good Parts</h3>
-           <img class="img-responsive col-lg-5 col-md-5 col-sm-6 col-xs-7" src="images/books.png" alt="books">
-           <p> two entry-mid level javascript books that are good</p>
+           <img class="col-lg-4 col-md-4 col-sm-5 col-xs-6" src="images/books.png" alt="books">
+           <p> two entry-mid level Javascript books that I have read to gain a better understanding of Javascript and how to use it. A bit more in-depth than most tutorials they go over many best practices and good and bad aspects of the language</p>
         </div>
     </div> <!-- row -->
     <footer>
-        <span>created by</span>
-        <span>terms of service</span>
-        <span>questions comments</span>
+        <span class="footerleft">created by Matthew Ray</span>
+        <span class="footerright">last updated July 2015</span>
     </footer>
     <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>

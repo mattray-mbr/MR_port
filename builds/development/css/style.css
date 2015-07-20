@@ -57,7 +57,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 body {
   background-color: #ffffcc;
-  background-image: url(http://www.transparenttextures.com/patterns/clean-gray-paper.png);
+  background-image: url(../images/clean-gray-paper.png);
 }
 
 h1, h2, h3 {
@@ -96,7 +96,7 @@ a:hover {
 
 .top {
   background-color: #005200;
-  background-image: url(http://www.transparenttextures.com/patterns/clean-gray-paper.png);
+  background-image: url(../images/clean-gray-paper.png);
   border-bottom: 2px solid black;
   width: 100%;
   height: 100px;
@@ -114,6 +114,12 @@ a:hover {
   width: 16.5%;
   font-weight: bold;
 }
+@media (max-width: 950px) {
+  .nav li {
+    font-size: 1.3em;
+    width: 17.4%;
+  }
+}
 .nav li a {
   color: #ffffcc;
 }
@@ -123,6 +129,38 @@ a:hover {
   text-shadow: none;
 }
 
+.nav-menu-small {
+  font-size: 3.8em;
+  font-weight: bold;
+  text-shadow: 2px 2px black;
+  color: #33ADFF;
+  font-family: font-family "Roboto Slab", serif;
+  margin-left: 20px;
+  margin-top: 15px;
+  float: left;
+}
+
+.mini {
+  background-color: black;
+  background-image: url(../images/clean-gray-paper.png);
+}
+.mini ul {
+  display: block;
+}
+.mini ul li {
+  width: 100%;
+}
+.mini ul #mattray {
+  display: none;
+}
+
+.menuButton {
+  background-color: black;
+  margin-top: 30px;
+  margin-left: 30px;
+  float: left;
+}
+
 #second {
   margin-right: 28.2%;
 }
@@ -130,10 +168,20 @@ a:hover {
 #mattray {
   width: 33%;
 }
+@media (max-width: 950px) {
+  #mattray {
+    width: 29%;
+  }
+}
 #mattray .title {
   padding-top: 5px;
   font-size: 2.6em;
   text-shadow: 2px 2px black;
+}
+@media (max-width: 950px) {
+  #mattray .title {
+    font-size: 2.3em;
+  }
 }
 #mattray .title a {
   color: #33ADFF;
@@ -154,7 +202,7 @@ a:hover {
   width: 100%;
   padding: 10px 20px 10px 20px;
   background-color: #4C3300;
-  background-image: url(http://www.transparenttextures.com/patterns/clean-gray-paper.png);
+  background-image: url(../images/clean-gray-paper.png);
   border-bottom: 2px solid black;
 }
 
@@ -162,7 +210,7 @@ a:hover {
   padding: 30px 15px;
   min-height: 800px;
   background-color: #ffffcc;
-  background-image: url(http://www.transparenttextures.com/patterns/clean-gray-paper.png);
+  background-image: url(../images/clean-gray-paper.png);
 }
 #container-bottom h3 {
   text-align: center;
@@ -175,14 +223,14 @@ a:hover {
   text-align: center;
   color: black;
   margin: 0 0 20px 0;
-  font-size: 3em;
+  font-size: 2.5em;
 }
 
 #landscape {
   padding-right: 10px;
   padding-left: 10px;
   background-color: #4C3300;
-  background-image: url(http://www.transparenttextures.com/patterns/clean-gray-paper.png);
+  background-image: url(../images/clean-gray-paper.png);
 }
 #landscape img {
   border: 6px solid #ffffcc;
@@ -222,7 +270,7 @@ a:hover {
 
 .alt-page {
   background-color: #4C3300;
-  background-image: url(http://www.transparenttextures.com/patterns/clean-gray-paper.png);
+  background-image: url(../images/clean-gray-paper.png);
 }
 
 #current-img {
@@ -245,13 +293,17 @@ a:hover {
   margin: 10px 10px;
 }
 
-.work-imgs {
-  overflow: hidden;
-  margin: 10px 0;
+.github {
+  padding-bottom: 50px;
 }
 
 .future-update {
   color: #33ADFF;
+}
+
+.blazepic {
+  width: 40%;
+  margin: 0 auto;
 }
 
 .temporary {
@@ -274,9 +326,17 @@ footer {
   width: 100%;
   padding: 3px;
   background-color: #005200;
-  background-image: url(http://www.transparenttextures.com/patterns/clean-gray-paper.png);
+  background-image: url(../images/clean-gray-paper.png);
   margin: 0;
 }
 footer span {
-  color: #333;
+  color: #999;
+  font-weight: bold;
+  margin: 0 20px;
+}
+footer .footerleft {
+  float: left;
+}
+footer .footerright {
+  float: right;
 }

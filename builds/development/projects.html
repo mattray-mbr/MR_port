@@ -9,14 +9,25 @@
 </head>
 <body>
     <header class="top">
-        <nav class="navbar navbar-default navbar-static-top" id="heading">
-            <ul class="nav nav-pills">
-                <li><a href="about.html">About Me</a></li>
-                <li ><a href="projects.html">Projects</a></li>
-                <li id="mattray"><h1 class="title"><a href="index.html">Matt Ray</a></h1></li>
-                <li><a href="resources.html">Resources</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+        <nav class="navbar navbar-default navbar-static-top" id="heading" rol="navigation">
+        <div class="navbar-header">
+                <h2 class="visible-xs nav-menu-small">Matt Ray</h2>
+                <button type="button" class="navbar-toggle menuButton" data-toggle="collapse" data-target="#collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse hidden-xs" id="collapse">
+                <ul class="nav nav-pills">
+                    <li><a href="about.html">About Me</a></li>
+                    <li ><a href="projects.html">Projects</a></li>
+                    <li id="mattray"><h1 class="title"><a href="index.html">Matt Ray</a></h1></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <div class="container">
@@ -33,23 +44,25 @@
     <div class="row">
     <div class="content col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1" id="container-bottom">
        <h3>A bit about my workflow and design process</h3>
-       <p class="words">Right now I am focusing more on responsive design rather than advacnced functionality with my work. I am primarily using bootstrap and sass in most of my projects to achieve flexiblity and effecientcy. I also use jquery for most of the scripts. I am looking into other scripting libraries like coffee-script, typescript, ember.js. I want to gradually bring in more functionality into my projects while keeping responsive design at the core of everything. </p>
+       <p class="words">Right now I am focusing more on responsive design rather than advanced functionality with my work. I am primarily using bootstrap, sass, and compass in most of my projects to achieve flexiblity and effecientcy. I use jquery for most of the scripts although I am looking into other scripting libraries like coffee-script, typescript, underscore, ember.js. I want to gradually bring in more functionality into my projects which means each project should be slightly more advanced than the last. I am learning to use gulp and node npm for installing packages and to better manage my workflow as well as git for a cms.</p>
+       <h3> This site</h3>
+       <p class="words">Just a simple portfolio website that I will be using from now on. It's kind of still in a rough draft phase, but I will be updating it gradually over the next year or so until I get everything fullly fleshed out the way I want it. I went with a very natural earthy color scheme which reflects who I am and where I grew up. I still need to test and update the contact form as it is not fully functional right now. Overall I am pretty satisfied with how the site looks at this point in time.</p>
        <h3>Rayce Gravity</h3>
-       <p class="words"> Rayce Gravity is one of the first sites I have done. I have re-done the site several times, hopefully improving it each time as I learn more. Due to not having a ton of information about the business I decided to go with a simple single-page layout this time around. It is supposed to look good on all screen sizes and devices.</p>
+       <p class="words"> Rayce Gravity is one of the first sites that I have done. I have re-done the site several times, hopefully improving it each time as I learn more. It was made for a family member that has a small start-up business. Due to not having a ton of information about the business I decided to go with a simple single-page layout this time around. As it is a bootstrap framework, the layout changes a bit from wide-screen to mobile. Overall load time is a bit slow because of the pictures so I will try to improve this in the future.</p>
        <div class="work-imgs">
-            <img class="img-responsive" src="images/RayceMultiple.png" alt="RayceGravPics">
+            <a href="http://www.raycegravity.com" target="_blank"><img class="img-responsive" src="images/RayceMultiple.png" alt="RayceGravPics"></a>
        </div>
        <h3> Blaze Gaming</h3>
-       <p class="words">Blaze Gaming is a template for a online gaming guild and community. Although not entirely in use, I am working on making it fully funtional in all aspects. I decided to go with a gaming site because it gives me something that I am directly in control over rather than a website for some other business. With there being a ton of other guild sites via platforms like guild launch, I can draw inspiration from what they do, while understanding just how to impliment certain features by myself. It is an ongoing project that even if it is never used by other people is a good next step for adding functionality and a testing ground for me to learn without impeding on anyone else. </p>
-       <h3>Camelot Unchained UI addon</h3>
-       <p class="words">Camelot Unchained is a new MMORPG that is coming out in late 2016. They have designed their user interface for the game around a web-based platform that utilizes html javascript and typescript, making it very easy for the modding community to customize the game UI to their personal preference. I decided that this would be the perfect opportunity to work on a project that is a bit different from a website while still falling under the category of web design. Currently I am waiting for the game to develope a little more and the ui-api to become fullly available to see what I can do as far as mod creation and what is needed in the game to make it more functional.</p>
+       <div class="work-imgs">
+       <a href="http://www.blazegaming.com" target="_blank"><img class="img-responsive blazepic" src="images/placeholder.png" alt="blazegaming"></a>
+       </div>
+       <p class="words">My current and unfinished project. Blaze Gaming is a template for a online gaming guild and community. Although not intended to be in use, I am working on making it fully funtional in all aspects. I decided to go with a gaming site for a few reasons. It allows me to build it the way that I want instead of apealing to a bussiness or other group. Also with there being a ton of other guild sites via platforms like guild launch, I can draw inspiration from what they do, while understanding just how to impliment certain features by myself. I can also work on different features over time as I learn the ins and outs of things like forums, secure log-in, api's, and other things. It will be an ongoing project that even if never used by other people is a good step for me in adding functionality. It is more of a testing ground than anything else for me to learn without impeding on anyone or being restricted to a deadline.</p>
        <p class="future-update"> I have a bunch of other ideas for projects planned in the future, I'm just not ready to share what those are and won't post them until they are further along in development. Stay tuned for other things coming. </p>
     </div>
     </div> <!-- row -->
-    <footer class="col-lg-12">
-        <span>created by</span>
-        <span>terms of service</span>
-        <span>questions comments</span>
+    <footer>
+        <span class="footerleft">created by Matthew Ray</span>
+        <span class="footerright">last updated July 2015</span>
     </footer>
     <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
