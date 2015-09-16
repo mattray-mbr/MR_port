@@ -4,11 +4,13 @@
 
 $beige              : #ffffcc;
 $green              :#4C3300;
-$DarkGreen     :#005200;
+$darkGreen     :#005200;
 $blue                 :#33ADFF;
 
 
-$headfont         : font-family "Amarante", serif;
-$bodyfont         : font-family "Roboto Slab", serif;
+$headFont      : font-family "Amarante", serif;
+$bodyFont      : font-family "Roboto Slab", serif;
 
-$backimg         :url(../images/clean-gray-paper.png);
+$backImg        :url(../images/clean-gray-paper.png);
+
+$txtShadow     : 2px 2px black;

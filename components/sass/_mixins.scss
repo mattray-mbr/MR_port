@@ -10,5 +10,16 @@
 
 // background mixin
 
+@mixin backdrop ($backColor) {
+    background-color: $backColor;
+    background-image: $backImg;
+    size: cover;
+}
 
-
+/*@mixin linkHover ( ) {
+    background-color: 
+    color: 
+    text-decoration: 
+    text-shadow: 
+}
+*/

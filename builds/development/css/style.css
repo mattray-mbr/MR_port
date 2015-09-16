@@ -55,9 +55,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
+/*@mixin linkHover ( ) {
+    background-color: 
+    color: 
+    text-decoration: 
+    text-shadow: 
+}
+*/
 body {
   background-color: #ffffcc;
   background-image: url(../images/clean-gray-paper.png);
+  size: cover;
 }
 
 h1, h2, h3 {
@@ -79,7 +87,6 @@ h2 {
 }
 
 p {
-  font-size: 1em;
   line-height: 1.5;
   color: black;
   margin: 20px;
@@ -88,18 +95,17 @@ p {
 a {
   color: #33ADFF;
 }
-
 a:hover {
   text-decoration: none;
-  color: inherit;
 }
 
 .top {
   background-color: #005200;
   background-image: url(../images/clean-gray-paper.png);
-  border-bottom: 2px solid black;
+  size: cover;
   width: 100%;
   height: 100px;
+  border-bottom: 2px solid black;
 }
 
 .navbar {
@@ -109,7 +115,7 @@ a:hover {
 
 .nav li {
   font-size: 1.7em;
-  text-shadow: 1px 1px black;
+  text-shadow: 2px 2px black/2;
   text-align: center;
   width: 16.5%;
   font-weight: bold;
@@ -143,6 +149,7 @@ a:hover {
 .mini {
   background-color: black;
   background-image: url(../images/clean-gray-paper.png);
+  size: cover;
 }
 .mini ul {
   display: block;
@@ -175,8 +182,8 @@ a:hover {
 }
 #mattray .title {
   padding-top: 5px;
-  font-size: 2.6em;
   text-shadow: 2px 2px black;
+  font-size: 2.6em;
 }
 @media (max-width: 950px) {
   #mattray .title {
@@ -199,18 +206,20 @@ a:hover {
 }
 
 .container {
-  width: 100%;
-  padding: 10px 20px 10px 20px;
   background-color: #4C3300;
   background-image: url(../images/clean-gray-paper.png);
+  size: cover;
+  width: 100%;
+  padding: 10px 20px 10px 20px;
   border-bottom: 2px solid black;
 }
 
 #container-bottom {
-  padding: 30px 15px;
-  min-height: 800px;
   background-color: #ffffcc;
   background-image: url(../images/clean-gray-paper.png);
+  size: cover;
+  padding: 30px 15px;
+  min-height: 800px;
 }
 #container-bottom h3 {
   text-align: center;
@@ -227,10 +236,10 @@ a:hover {
 }
 
 #landscape {
-  padding-right: 10px;
-  padding-left: 10px;
   background-color: #4C3300;
   background-image: url(../images/clean-gray-paper.png);
+  size: cover;
+  padding: 0 10px;
 }
 #landscape img {
   border: 6px solid #ffffcc;
@@ -271,10 +280,12 @@ a:hover {
 .alt-page {
   background-color: #4C3300;
   background-image: url(../images/clean-gray-paper.png);
+  size: cover;
 }
 
 #current-img {
   border: 2px solid black;
+  width: 100%;
 }
 
 .page-head {
@@ -321,18 +332,25 @@ a:hover {
   border: 1px solid black;
 }
 
+.resources p {
+  text-align: center;
+}
+
+.websites {
+  font-size: 2em;
+}
+
 footer {
-  height: 25px;
-  width: 100%;
-  padding: 3px;
   background-color: #005200;
   background-image: url(../images/clean-gray-paper.png);
-  margin: 0;
+  size: cover;
+  height: 25px;
+  width: 100%;
+  padding: 5px;
 }
 footer span {
-  color: #999;
-  font-weight: bold;
-  margin: 0 20px;
+  color: black;
+  margin: 0 10px;
 }
 footer .footerleft {
   float: left;

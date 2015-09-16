@@ -16,6 +16,8 @@ var sassSources = ['components/sass/style.scss'];
 
 var htmlSources = ['builds/development/*.html'];
 
+var phpSources = ['builds/development/*.php']; 
+
 //only use there is more than one script file being implemented
 gulp.task('js', function (){
     gulp.src(jsSources)
@@ -41,6 +43,11 @@ gulp.task('html', function(){
     .pipe(connect.reload())
 });
 
+gulp.task('php', function(){
+    gulp.src(phpSources)
+    .pipe(connect.reload())
+});
+
 gulp.task('connect', function(){
     connect.server({
         root: 'builds/development/',
@@ -52,7 +59,8 @@ gulp.task('connect', function(){
 gulp.task('watch', function (){
     gulp.watch(jsSources, ['js']);
     gulp.watch('components/sass/*.scss', ['compass']);
-    gulp.watch(htmlSources, ['html']);    
+    gulp.watch(htmlSources, ['html']);  
+    gulp.watch(phpSources, ['php']);  
 });
 
 gulp.task('default', ['js', 'compass', 'connect', 'watch']);

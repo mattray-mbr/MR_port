@@ -1,35 +1,16 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Matt Ray Portfolio</title>
+    <title>Portfolio About</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-    <header class="top">
-        <nav class="navbar navbar-default navbar-static-top" id="heading" rol="navigation">
-        <div class="navbar-header">
-                <h2 class="visible-xs nav-menu-small">Matt Ray</h2>
-                <button type="button" class="navbar-toggle menuButton" data-toggle="collapse" data-target="#collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-            <div class="collapse navbar-collapse hidden-xs" id="collapse">
-                <ul class="nav nav-pills">
-                    <li><a href="about.html">About Me</a></li>
-                    <li ><a href="projects.html">Projects</a></li>
-                    <li id="mattray"><h1 class="title"><a href="index.html">Matt Ray</a></h1></li>
-                    <li><a href="resources.html">Resources</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+    <?php 
+        include("includes/header.php");
+     ?>
     <div class="container">
         <div class="img-container col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1" id="landscape">
             <div class="semi-circle alt-page" id="top-left"></div>
@@ -57,12 +38,8 @@
         </div>
     </div> <!-- content -->
     </div> <!-- row -->
-    <footer>
-        <span class="footerleft">created by Matthew Ray</span>
-        <span class="footerright">last updated July 2015</span>
-    </footer>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
+<?php
+        include ("includes/footer.php");
+      ?>
 </body>
 </html>
