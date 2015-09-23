@@ -1,3 +1,5 @@
+
+<?php include "process.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,19 +26,22 @@
     </div> 
     <div class="row">
     <div class="content col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1" id="container-bottom">
-        <h3  class="temporary">My Contact form is currently not working. Please just email me at mattray.apex@gmail.com until I figure out the errors with the contact form.</h3>
-        <form action="" method='' role="form">
+        <?php if (isset($msg)) {echo '<div id="formMessage"><p>', $msg , '<.p></div>'; } ?>
+        <form id="myContactForm" action="<?php echo $_SERVER[ 'PHP_SELF' ] ?>" method=' POST' role="form">
             <div class="form-group">
                 <label for="contact-name" class="control-label">Name</label>
-                <input name="name" type="text" class="form-control" id="contact-name" placeholder="Name">
+                <input name="name" type="text" class="form-control" id="contact-name" placeholder="Name" required value="<?php if (isset($name)) { echo $name; } ?>">
+                <?php if (isset($err_name)) { echo $err_name; } ?>
             </div>
             <div class="form-group">
                 <label for="contact-email" class="control-label">Email</label>
-                <input name="email" type="email" class="form-control" id="contact-email" placeholder="example@domain.com">
+                <input name="email" type="email" class="form-control" id="contact-email" placeholder="example@domain.com" required value="<?php if (isset($email)) { echo $email; } ?>">
+                <?php if (isset($err_email)) { echo $err_email; } ?>
             </div>
             <div class="form-group">
                 <label for="contact-message" class="control-label">Message</label>
-                <textarea name="message" class="form-control" id="contact-message" rows="7" placeholder="type message here"></textarea>
+                <textarea name="message" class="form-control" id="contact-message" rows="7" placeholder="type message here" required><?php if (isset($message)) { echo $message; } ?></textarea>
+                <?php if (isset($err_message)) { echo $err_message; } ?>
             </div>
                 <button name="" type="submit" class="btn btn-lg btn-success">Send</button>
         </form>
