@@ -32,7 +32,7 @@
 
                 $mail -> Host = 'smtp.gmail.com';
                 $mail -> Username = 'mattray.apex@gmail.com';
-                $mail -> Password = 'ER86sh6n63173';
+                $mail -> Password = '';
                 $mail -> SMTPSecure = 'tls';
                 $mail -> Port = 465;
                 //used for connection not the sending address
