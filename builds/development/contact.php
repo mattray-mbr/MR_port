@@ -1,5 +1,14 @@
 
-<?php include "process.php"; ?>
+<?php 
+    session_start( );
+
+    require_once 'security.php';
+
+    $errors = isset($_SESSION[ 'errors' ]) ? $_SESSION [ 'errors' ] : [ ];
+    $fields = isset($_SESSION[ 'fields' ]) ? $_SESSION [ 'fields' ] : [ ];
+
+ ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,24 +35,28 @@
     </div> 
     <div class="row">
     <div class="content col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1" id="container-bottom">
-        <?php if (isset($msg)) {echo '<div id="formMessage"><p>', $msg , '<.p></div>'; } ?>
-        <form id="myContactForm" action="<?php echo $_SERVER[ 'PHP_SELF' ] ?>" method=' POST' role="form">
+    <h3>Still having issues getting this to work. grrrr...</h3>
+    <?php if(!empty($errors)): ?>
+        <div class="formErrors">
+            <ul>
+                <li style="color:red"><?php echo implode( '</li ><li style="color:red">', $errors); ?></li>
+            </ul>
+        </div>
+    <?php endif; ?>
+        <form id="myContactForm" action="mail.php" method=' post' role="form">
             <div class="form-group">
                 <label for="contact-name" class="control-label">Name</label>
-                <input name="name" type="text" class="form-control" id="contact-name" placeholder="Name" required value="<?php if (isset($name)) { echo $name; } ?>">
-                <?php if (isset($err_name)) { echo $err_name; } ?>
+                <input name="name" type="text" class="form-control" id="contact-name" placeholder="Name" <?php echo isset($fields[ 'name' ]) ? 'value=" ' . e($fields[ 'name' ]) .' " ' : ' ' ?>>
             </div>
             <div class="form-group">
                 <label for="contact-email" class="control-label">Email</label>
-                <input name="email" type="email" class="form-control" id="contact-email" placeholder="example@domain.com" required value="<?php if (isset($email)) { echo $email; } ?>">
-                <?php if (isset($err_email)) { echo $err_email; } ?>
+                <input name="email" type="email" class="form-control" id="contact-email" placeholder="example@domain.com" <?php echo isset($fields[ 'email' ]) ? 'value=" ' . e($fields[ 'email' ]) .' " ' : ' ' ?>>
             </div>
             <div class="form-group">
                 <label for="contact-message" class="control-label">Message</label>
-                <textarea name="message" class="form-control" id="contact-message" rows="7" placeholder="type message here" required><?php if (isset($message)) { echo $message; } ?></textarea>
-                <?php if (isset($err_message)) { echo $err_message; } ?>
+                <textarea name="message" class="form-control" id="contact-message" rows="7" placeholder="type message here" ><?php echo isset($fields[ 'message' ]) ?  e($fields[ 'message' ]) : ' ' ?></textarea>
             </div>
-                <button name="" type="submit" class="btn btn-lg btn-success">Send</button>
+                <button name="" type="submit" value="send" class="btn btn-lg btn-success">Send</button>
         </form>
 
     </div>
@@ -53,3 +66,7 @@
      ?>
 </body>
 </html>
+<?php
+     unset($_SESSION['errors' ]);
+     unset($_SESSION[ 'fields' ]);
+ ?>

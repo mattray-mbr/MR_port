@@ -306,10 +306,7 @@ a:hover {
 
 .github {
   padding-bottom: 50px;
-}
-
-.future-update {
-  color: #33ADFF;
+  font-size: 1.5em;
 }
 
 .blazepic {
